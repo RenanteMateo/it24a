@@ -6,8 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hello world!</h1>
-    <h1>I am RENANTE</h1>
-    <H1>19 YEARS OLD</H1>
+   <h1>Todo List</h1>
+
+<input
+type="text"
+id="TaskInput"
+placeholder="add Task"
+/>
+
+<button onclick="addTask()">add Task</button>
+
+<u1 id="tasklisk">your task go here</u1>
+
+<script>    function getTaskTest(){
+        const input = document.getElementById('taskinput');
+        const text = input.value.trim();
+
+        console.log("the input value is: " + input.value);
+
+        return text;
+
+    }
+
+    function addTask(){
+        const taskText = grtTaskText();
+
+        if (tasktest === "") {
+            return;
+        }
+        addTaskItem(taskTest);
+
+        document.getElementById('taskInput').value = "";
+    }
+
+function addTaskItem(taskTest) {
+    const li = document.createElement('li');
+
+    const taskSpan = document.createElement('Span');
+    taskSpan.textContent = taskText;
+
+    li.appendChild(taskSpan);
+    document.getElementById('taskList').appendChild(li);
+
+}</script>
+    
 </body>
 </html>
